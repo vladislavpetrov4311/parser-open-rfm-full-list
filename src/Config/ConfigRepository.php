@@ -1,6 +1,6 @@
 <?php
 
-namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Config;
+namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\Config;
 
 class ConfigRepository
 {
