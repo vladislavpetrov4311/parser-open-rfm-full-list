@@ -1,5 +1,5 @@
 {
-  "name": "open-rfm/parser",
+  "name": "anastasya/date-transformer2",
   "description": "Преобразователь дат в определенный формат",
   "type": "library",
   "require": {
@@ -14,7 +14,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "OpenPrf\\Parser\\": "."
+      "Anastasya\\DateTransformers2\\": "src"
     }
   }
 }
