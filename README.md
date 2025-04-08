@@ -4,7 +4,8 @@
 
 Пример использования либы в composer.lock:
 
-`
+
+
 	"packages": [
 
         {
@@ -88,7 +89,7 @@
 
 В composer.json указываем так:
 
-`
+
 
 	"require": {
 
