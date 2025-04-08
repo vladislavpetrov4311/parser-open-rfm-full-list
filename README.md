@@ -4,7 +4,8 @@
 
 Пример использования либы в composer.lock:
 
-`"packages": [
+`
+"packages": [
 
         {
 
@@ -87,7 +88,8 @@
 
 В composer.json указываем так:
 
-`"require": {
+`
+"require": {
 
         "vlad/open-rfm": "^1.1.3"
 
