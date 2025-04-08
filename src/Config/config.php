@@ -5,11 +5,6 @@ return [
     'input_file_path' => '/rl-dev/open-rfm-full-list/',
     'output_file_name' => 'clean.jsonl',
     'input_file_name' => 'latest.txt',
-    'sentry_dsn' => getenv('SENTRY_DSN'),
-    's3.region' => getenv('S3_REGION'),
-    's3.access_key' => getenv('S3_ACCESS_KEY'),
-    's3.secret_key' => getenv('S3_SECRET_KEY'),
-    's3.host' => getenv('S3_HOST'),
     'terrorist_names' => [
         'АХМЕТОВ РИНАТ ЛЕОНИДОВИЧ ~ 21.09.1966 ~ Г.ДОНЕЦК', 'ГУМЕНЮК ИГОРЬ НИКОЛАЕВИЧ ~ 21.04.1961', 'САКОВИЧ ЕВГЕНИЙ АНАТОЛЬЕВИЧ ~ 01.11.1957',
         'СПИВАК ЕВГЕНИЙ ЛЕОНИДОВИЧ ~ 01.06.1957', 'ЛОГВИНОВ НИКОЛАЙ ПАВЛОВИЧ ~ 18.12.1953', 'КУХТИН МИХАИЛ АНАТОЛЬЕВИЧ ~ 20.02.1965',
