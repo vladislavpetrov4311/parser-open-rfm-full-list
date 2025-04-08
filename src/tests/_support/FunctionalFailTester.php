@@ -2,7 +2,7 @@
 
 use Codeception\Scenario;
 use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\FileHandler;
-use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\StorageInterface;
+use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\Interface\StorageInterface;
 
 use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\ModelParser\Parser;
 use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\tests\_support\Service\TestFileStorage;

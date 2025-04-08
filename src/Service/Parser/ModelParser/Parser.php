@@ -2,7 +2,7 @@
 
 namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\ModelParser;
 
-use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\InterfaceModelParser;
+use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\Interface\InterfaceModelParser;
 
 use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\ListParser\RfmListParser;
 
