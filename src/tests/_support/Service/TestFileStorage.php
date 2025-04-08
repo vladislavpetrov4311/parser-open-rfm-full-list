@@ -2,7 +2,7 @@
 
 namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\tests\_support\Service;
 
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\StorageInterface;
+use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\StorageInterface;
 
 class TestFileStorage implements StorageInterface, TestStorageInterface
 {
