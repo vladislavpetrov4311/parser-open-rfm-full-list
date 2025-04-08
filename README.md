@@ -1,8 +1,9 @@
 # parser-open-rfm-full-list
 
-Библиотека парсирования открытого перечня РФМ
+Библиотека [LIB-a] парсирования открытого перечня РФМ
 
 Пример использования либы в composer.lock:
+
 `"packages": [
         {
             "name": "vlad/open-rfm",
@@ -43,7 +44,9 @@
             "time": "2022-11-01T06:48:30+00:00"
         }
 ]`
-А в composer.json указываем так:
+
+В composer.json указываем так:
+
 `"require": {
         "vlad/open-rfm": "^1.1.3"
     }`
