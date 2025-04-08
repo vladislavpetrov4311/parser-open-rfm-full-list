@@ -1,9 +1,10 @@
 <?php
 
 use Codeception\Scenario;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\FileHandler;
+use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\FileHandler;
+use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\StorageInterface;
+
 use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\ModelParser\Parser;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\StorageInterface;
 use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\tests\_support\Service\TestFileStorage;
 use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\tests\_support\Service\TestStorageInterface;
 use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Exception\ParserException;
