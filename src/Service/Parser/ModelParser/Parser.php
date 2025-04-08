@@ -2,8 +2,9 @@
 
 namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\ModelParser;
 
+use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\InterfaceModelParser;
+
 use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\ListParser\RfmListParser;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\ModelParser\Interface\InterfaceModelParser;
 
 class Parser implements InterfaceModelParser
 {
