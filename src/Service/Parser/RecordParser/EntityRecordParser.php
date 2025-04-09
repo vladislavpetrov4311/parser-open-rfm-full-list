@@ -43,6 +43,25 @@ class EntityRecordParser implements RecordParserInterface
                 // Проверяем наличие вложенных скобок с определенным количеством открывающих скобок
                 $arrayWithClip = InsertBracketAttributeParser::get($item);
                 $clean = array_merge($clean, $arrayWithClip); // Добавляем элементы в $clean
+            } elseif ((strpos($item , '(') && strpos($item , ')')) !==false && preg_match_all('/\,/', $item) >= 2 && strpos($item, 'БЕЛАЯ СИЛА, ВЛАСТЬ') === false) {
+                // Проверяем на то, что в скобках организации разделены через , (в этом случае заменяем , на ;)
+                $content = str_replace(',', ';', $item);
+                // теперь нужно предпоследнюю ; заменить на , (для корректной работы метода)
+                $length = strlen($content);
+                $content[$length - 3] = ',';
+                preg_match_all('/\((.*?)\)/', $content, $matches);
+                $semicolonCount = 0;
+                // Проходим по всем найденным содержимому между скобками
+                foreach ($matches[1] as $subContent) {
+                    // Считаем количество символов ';' в каждом содержимом
+                    $semicolonCount += substr_count($subContent, ';');
+                }
+                if($semicolonCount >= 1) {
+                    if(!empty(EntityProfileBuilderAttributeParser::get($content))) {
+                        $subSplits = EntityProfileBuilderAttributeParser::get($content);
+                        $clean = array_merge($clean, $subSplits); // Добавляем вложенные объекты
+                    }
+                }
             } elseif (!empty(EntityProfileBuilderAttributeParser::get($item))) {
                 // Проверяем наличие объектов внутри скобок через `;`
                 $subSplits = EntityProfileBuilderAttributeParser::get($item);
