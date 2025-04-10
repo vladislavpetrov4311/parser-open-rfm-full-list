@@ -12,8 +12,9 @@ COPY ./src ./src
 COPY ./codeception.yml ./
 COPY ./composer.json ./
 COPY ./composer.lock ./
+COPY ./.env ./
 
 RUN composer config --global gitlab-token.incident-center.gitlab.yandexcloud.net ${COMPOSER_GITLAB_TOKEN} && \
-    composer install
+    composer require vlucas/phpdotenv && composer install
 
 CMD php -r "require 'src/index.php'; handler();"

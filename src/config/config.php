@@ -1,10 +1,17 @@
 <?php
 
+use Dotenv\Dotenv;
+
+require __DIR__ . '/../../vendor/autoload.php';
+
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../../');
+$dotenv->load();
+
 return [
-    'output_file_path' => getenv('OUTPUT_FILE_PATH'),
-    'input_file_path' => getenv('INPUT_FILE_PATH'),
-    'output_file_name' => getenv('OUTPUT_FILE_NAME'),
-    'input_file_name' => getenv('INPUT_FILE_NAME'),
+    'output_file_path' => $_ENV['OUTPUT_FILE_PATH'],
+    'input_file_path' => $_ENV['INPUT_FILE_PATH'],
+    'output_file_name' => $_ENV['OUTPUT_FILE_NAME'],
+    'input_file_name' => $_ENV['INPUT_FILE_NAME'],
     'terrorist_names' => [
         'АХМЕТОВ РИНАТ ЛЕОНИДОВИЧ ~ 21.09.1966 ~ Г.ДОНЕЦК', 'ГУМЕНЮК ИГОРЬ НИКОЛАЕВИЧ ~ 21.04.1961', 'САКОВИЧ ЕВГЕНИЙ АНАТОЛЬЕВИЧ ~ 01.11.1957',
         'СПИВАК ЕВГЕНИЙ ЛЕОНИДОВИЧ ~ 01.06.1957', 'ЛОГВИНОВ НИКОЛАЙ ПАВЛОВИЧ ~ 18.12.1953', 'КУХТИН МИХАИЛ АНАТОЛЬЕВИЧ ~ 20.02.1965',
