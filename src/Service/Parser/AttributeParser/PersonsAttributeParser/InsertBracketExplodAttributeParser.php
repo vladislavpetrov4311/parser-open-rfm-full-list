@@ -1,8 +1,8 @@
 <?php
 
-namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\AttributeParser\PersonsAttributeParser;
+namespace IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\AttributeParser\PersonsAttributeParser;
 
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\AttributeParser\PersonsAttributeParser\Interface\AttributeParserInterface;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\AttributeParser\PersonsAttributeParser\Interface\AttributeParserInterface;
 class InsertBracketExplodAttributeParser implements AttributeParserInterface
 {
     /**

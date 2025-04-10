@@ -1,4 +1,4 @@
-# parser-open-rfm-full-list
+# lib-parser-open-rfm-full-list
 
 Библиотека [LIB-a] парсирования открытого перечня РФМ
 

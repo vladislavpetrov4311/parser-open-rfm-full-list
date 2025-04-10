@@ -1,11 +1,11 @@
 <?php
 
-namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\RecordParser;
+namespace IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\RecordParser;
 
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Exception\ParserException;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\AttributeParser\PersonsAttributeParser\InsertBracketAttributeParser;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\AttributeParser\PersonsAttributeParser\InsertBracketExplodAttributeParser;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\RecordParser\Interface\RecordParserInterface;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Exception\ParserException;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\AttributeParser\PersonsAttributeParser\InsertBracketAttributeParser;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\AttributeParser\PersonsAttributeParser\InsertBracketExplodAttributeParser;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\RecordParser\Interface\RecordParserInterface;
 
 class PersonsRecordParser implements RecordParserInterface
 {

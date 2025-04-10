@@ -1,6 +1,6 @@
 <?php
 
-namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\RecordParser\Interface;
+namespace IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\RecordParser\Interface;
 
 interface RecordParserInterface
 {

@@ -1,8 +1,9 @@
 <?php
 
-namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\tests\_support\Service;
+namespace IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\tests\_support\Service;
 
-use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\Interface\StorageInterface;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\tests\_support\Service\Interface\StorageInterface;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\tests\_support\Service\Interface\TestStorageInterface;
 
 class TestFileStorage implements StorageInterface, TestStorageInterface
 {

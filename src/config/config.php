@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'output_file_path' => '/rl-dev/open-rfm-full-list/',
-    'input_file_path' => '/rl-dev/open-rfm-full-list/',
-    'output_file_name' => 'clean.jsonl',
-    'input_file_name' => 'latest.txt',
+    'output_file_path' => getenv('OUTPUT_FILE_PATH'),
+    'input_file_path' => getenv('INPUT_FILE_PATH'),
+    'output_file_name' => getenv('OUTPUT_FILE_NAME'),
+    'input_file_name' => getenv('INPUT_FILE_NAME'),
     'terrorist_names' => [
         'АХМЕТОВ РИНАТ ЛЕОНИДОВИЧ ~ 21.09.1966 ~ Г.ДОНЕЦК', 'ГУМЕНЮК ИГОРЬ НИКОЛАЕВИЧ ~ 21.04.1961', 'САКОВИЧ ЕВГЕНИЙ АНАТОЛЬЕВИЧ ~ 01.11.1957',
         'СПИВАК ЕВГЕНИЙ ЛЕОНИДОВИЧ ~ 01.06.1957', 'ЛОГВИНОВ НИКОЛАЙ ПАВЛОВИЧ ~ 18.12.1953', 'КУХТИН МИХАИЛ АНАТОЛЬЕВИЧ ~ 20.02.1965',

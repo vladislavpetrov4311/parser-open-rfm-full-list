@@ -1,12 +1,11 @@
 <?php
 
-namespace IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\ModelParser;
+namespace IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\tests\_support\Service;
 
-use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\Interface\InterfaceModelParser;
-
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\tests\_support\Service\Interface\InterfaceModelParserTest;
 use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\ListParser\RfmListParser;
 
-class Parser implements InterfaceModelParser
+class ParserTest implements InterfaceModelParserTest
 {
     /**
      * Метод получения окончательного распаршенного списка

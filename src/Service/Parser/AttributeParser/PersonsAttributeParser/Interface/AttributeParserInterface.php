@@ -1,6 +1,6 @@
 <?php
 
-namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\AttributeParser\PersonsAttributeParser\Interface;
+namespace IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\AttributeParser\PersonsAttributeParser\Interface;
 
 interface AttributeParserInterface
 {

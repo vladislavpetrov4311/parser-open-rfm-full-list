@@ -1,13 +1,12 @@
 <?php
 
 use Codeception\Scenario;
-use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\FileHandler;
-use IncidentCenter\RL\CloudFunctions\MainFileHandlerParsers\Service\Interface\StorageInterface;
-
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\ModelParser\Parser;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\tests\_support\Service\TestFileStorage;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\tests\_support\Service\TestStorageInterface;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Exception\ParserException;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\tests\_support\Service\FileHandler;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\tests\_support\Service\ParserTest;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\tests\_support\Service\TestFileStorage;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\tests\_support\Service\Interface\TestStorageInterface;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Exception\ParserException;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\tests\_support\Service\Interface\StorageInterface;
 
 
 /**
@@ -50,7 +49,7 @@ class FunctionalFailTester extends \Codeception\Actor
     {
         try {
             $fileHandler = new FileHandler(
-                parser: new Parser(),
+                parser: new ParserTest(),
                 outputFileStorage: $this->outputStorage,
                 inputFileStorage: $this->inputStorage,
                 inputFileName: $this->getInputFailFileName(),

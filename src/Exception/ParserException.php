@@ -1,6 +1,6 @@
 <?php
 
-namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Exception;
+namespace IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Exception;
 use Exception;
 class ParserException extends Exception
 {

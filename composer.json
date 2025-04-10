@@ -1,0 +1,35 @@
+{
+    "name": "incident-center/lib-parser-open-rfm-full-list",
+    "description": "Либа парсера открытого перечня РФМ",
+    "autoload": {
+        "psr-4": {
+            "IncidentCenter\\RL\\CloudFunctions\\LibParserOpenRfmFullList\\": "src/"
+        }
+    },
+    "require": {
+        "aws/aws-sdk-php": "^3.222",
+        "sentry/sdk": "^3.1",
+        "phpoffice/phpspreadsheet": "^1.23",
+        "anastasya/date-transformer": "^2.0",
+        "incident-center/rl-constants": "^1.0"
+    },
+    "require-dev": {
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/mockery-module": "*",
+        "codeception/module-asserts": "^2.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "gitlab-domains": [
+            "incident-center.gitlab.yandexcloud.net"
+        ]
+    },
+    "repositories": {
+        "incident-center.gitlab.yandexcloud.net/182": {
+            "type": "composer",
+            "url": "https://incident-center.gitlab.yandexcloud.net/api/v4/group/182/-/packages/composer/packages.json"
+        }
+    }
+}

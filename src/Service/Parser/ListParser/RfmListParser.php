@@ -1,10 +1,10 @@
 <?php
 
-namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\ListParser;
+namespace IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\ListParser;
 
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\ListParser\Interface\ListParserInterface;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\RecordParser\EntityRecordParser;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\RecordParser\PersonsRecordParser;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\ListParser\Interface\ListParserInterface;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\RecordParser\EntityRecordParser;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\RecordParser\PersonsRecordParser;
 
 class RfmListParser implements ListParserInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\AttributeParser\EntityAttributeParser;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Repository\ConfigRepository;
-use IncidentCenter\RL\CloudFunctions\ParserOpenRfmFullList\Service\Parser\AttributeParser\EntityAttributeParser\Interface\AttributeParserInterface;
+namespace IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\AttributeParser\EntityAttributeParser;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Repository\ConfigRepository;
+use IncidentCenter\RL\CloudFunctions\LibParserOpenRfmFullList\Service\Parser\AttributeParser\EntityAttributeParser\Interface\AttributeParserInterface;
 
 class TerroristEntityDetectorAttributeParser implements AttributeParserInterface
 {
