@@ -43,7 +43,7 @@ class EntityRecordParser implements RecordParserInterface
                 // Проверяем наличие вложенных скобок с определенным количеством открывающих скобок
                 $arrayWithClip = InsertBracketAttributeParser::get($item);
                 $clean = array_merge($clean, $arrayWithClip); // Добавляем элементы в $clean
-            } elseif ((strpos($item , '(') && strpos($item , ')')) !==false && preg_match_all('/\,/', $item) >= 2 && strpos($item, 'БЕЛАЯ СИЛА, ВЛАСТЬ') === false) {
+            } elseif ((strpos($item , '(') && strpos($item , ')')) !==false && preg_match_all('/\,/', $item) > 2 && strpos($item, 'БЕЛАЯ СИЛА, ВЛАСТЬ') === false) {
                 // Проверяем на то, что в скобках организации разделены через , (в этом случае заменяем , на ;)
                 $content = str_replace(',', ';', $item);
                 // теперь нужно предпоследнюю ; заменить на , (для корректной работы метода)
